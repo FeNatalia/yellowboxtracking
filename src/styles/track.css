@@ -1,0 +1,18 @@
+#track img{
+    margin-top: 96px;
+    box-sizing: border-box;
+    max-width: 250px;
+    height: auto;
+}
+
+.track-photo{
+    display: grid;
+    justify-content: center;
+}
+
+#track {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
