@@ -1,6 +1,7 @@
 // NPM Packages
 import { useEffect, useState } from "react";
 // Project files
+import TrackPhoto from "../assets/pictures/track.jpg"
 import PackageItem from "../components/PackageItem";
 import PackageModal from "../components/PackageModal";
 
@@ -34,11 +35,14 @@ export default function Track({ setModal }){
     setModal(<PackageModal item={item}/>);
   }
     return(
-        <section>
-            <h1>Tracking</h1>
-            {status === 0 && <p>Loading</p>}
-            {status === 1 && <p>Error</p>}
-            {status === 2 && PackagesList}
+        <section id="track">
+          <div className="track-photo">
+            <img src={TrackPhoto} alt="an illustration of a hand holding a mobile phone"/>
+          </div>
+          <h1>Track my parcel</h1>
+          {status === 0 && <p>Loading</p>}
+          {status === 1 && <p>Error</p>}
+          {status === 2 && PackagesList}
         </section>
     )
 }

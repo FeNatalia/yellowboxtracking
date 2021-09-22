@@ -1,0 +1,7 @@
+@import "./variables.css";
+@import "./shared.css";
+
+@import "./navigation.css";
+@import "./home.css";
+@import "./track.css";
+@import "./modal.css";

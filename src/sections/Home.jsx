@@ -1,7 +1,13 @@
+import HomePhoto from "../assets/pictures/home.jpg"
+
 export default function Home(){
     return(
-        <section>
-           <h1>Welcome!</h1>
+        <section id="home">
+            <div className="home-photo">
+                <img src={HomePhoto} alt="an illustration of a brown box attached to balloons flying"/>
+            </div>
+            <h1>Yellowbox tracks your parcel live</h1>
+            <button className="btn-primary">TRACK NOW</button>
         </section>
     )
 }
