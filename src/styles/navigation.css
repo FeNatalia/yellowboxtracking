@@ -1,30 +1,44 @@
-#navigation img{
-    margin-right: var(--space-small);
-    margin-left: var(--space-small);
-    box-sizing: border-box;
-    max-width: 120px;
-    width: 200px;
-    height: auto;
+#navigation img {
+  box-sizing: border-box;
+  width: 120px;
+  height: auto;
 }
 
 #navigation {
-    background-color: var(--color-light-yellow);
-    height: 70px;
-    width: 100vw;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    display: flex ;
-    text-align: center;
+  background-color: var(--color-light-yellow);
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
 }
 
-#navigation a{
-    align-items: center;
-    text-decoration: none;
-    margin-right: var(--space-medium);
-    margin-left: var(--space-medium);
-    color: var(--color-red);
-    font-size: 16px;
-    font-weight: 900;
-    text-transform: uppercase;
+#navigation a {
+  align-items: center;
+  text-decoration: none;
+  margin-right: var(--space-small);
+  margin-left: var(--space-small);
+  color: var(--color-red);
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+/*Desktop queries*/
+@media (min-width: 992px) {
+  #navigation a {
+    margin-right: var(--space-big);
+    margin-left: var(--space-big);
+    font-size: 18px;
+  }
+
+  #navigation img {
+    width: 140px;
+  }
+
+  #navigation {
+    padding-top: var(--space-medium);
+  }
 }

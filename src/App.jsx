@@ -14,10 +14,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <Navigation/>
-      <Home/>
-      <Track setModal={setModal}/>
-      <Modal state={[modal, setModal]}/>
+      <Navigation />
+      <Home />
+      <Track setModal={setModal} />
+      <Modal state={[modal, setModal]} />
     </div>
   );
 }

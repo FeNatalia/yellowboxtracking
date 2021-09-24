@@ -1,39 +1,53 @@
-#track img{
-    margin-top: 96px;
-    box-sizing: border-box;
-    max-width: 250px;
-    height: auto;
+.track-photo img {
+  margin-top: 80px;
+  box-sizing: border-box;
+  width: 250px;
+  height: auto;
 }
 
-.track-photo{
-    display: grid;
-    justify-content: center;
+.track-photo {
+  display: grid;
+  justify-content: center;
+}
+
+#track h1 {
+  margin-bottom: var(--space-medium);
+  padding-right: var(--space-small);
+  padding-left: var(--space-small);
 }
 
 #track {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: var(--space-big);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: var(--space-big);
 }
 
-#package-item{
-    display: flex;
+#package-item {
+  display: flex;
 }
 
-#package-item img{
-    margin: var(--space-small);
-    align-self: center;
-    width: 60px;
-    height: 60px;
+#package-item img {
+  margin: var(--space-small);
+  align-self: center;
+  width: 60px;
+  height: 60px;
 }
 
 #package-item p {
-    margin-top: var(--space-small);
-    text-transform: capitalize;
-    color: #5C5C5C;
+  margin-top: var(--space-small);
+  text-transform: capitalize;
+  color: #5c5c5c;
 }
 #package-item h3 {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+/*Desktop queries*/
+@media (min-width: 992px) {
+  .track-photo img {
+    width: 300px;
+    height: auto;
+  }
 }
