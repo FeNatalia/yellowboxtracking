@@ -14,6 +14,9 @@ export default function Modal({ state }) {
             <button onClick={() => setChild(null)}>X</button>
           </div>
           {child}
+          <div className="bottom-button">
+            <button onClick={() => setChild(null)}>Go back</button>
+          </div>
         </div>
       </div>
     </>,

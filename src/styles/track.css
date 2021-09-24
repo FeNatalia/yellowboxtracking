@@ -15,4 +15,25 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom: var(--space-big);
+}
+
+#package-item{
+    display: flex;
+}
+
+#package-item img{
+    margin: var(--space-small);
+    align-self: center;
+    width: 60px;
+    height: 60px;
+}
+
+#package-item p {
+    margin-top: var(--space-small);
+    text-transform: capitalize;
+    color: #5C5C5C;
+}
+#package-item h3 {
+    margin-bottom: 0;
 }

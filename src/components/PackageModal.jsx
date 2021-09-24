@@ -1,11 +1,21 @@
+// Project files
+import PackageLogo from "../assets/pictures/package.png"
+
 export default function PackageModal({ item }) {
-    const {sender, eta, location_name} = item;
+    const {sender, eta, location_name, parcel_id, status} = item;
     return(
-        <div>
-            <h3>PACKAGE DETAILS</h3>
-            <p>from: {sender}</p>
-            <p>estimated time of arrival: {eta}</p>
-            <p>pick up from: {location_name}</p>
+        <div id="modal-popup">
+            <div className="upper-part">
+                <h3>Parcel information</h3>
+                <div className="package-logo">
+                    <img src={PackageLogo} alt="an illustration of a brown box in a yellow circle"/>
+                </div>
+            </div>
+            <p>From: {sender}</p>
+            <p>Parcel ID: {parcel_id}</p>
+            <p>Estimated arrival: {eta}</p>
+            <p>Order status: {status}</p>
+            <p>Pickup location: {location_name}</p>
         </div>
     )
 }
