@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Yellowbox package tracking app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web app that displays a list of orders (parcels) with some details like order status, ETAs, pickup locations, etc.
 
-## Available Scripts
+## How to use it 
 
-In the project directory, you can run:
+When you start the app, the first page you are going to see is the Home section, which has a pitch of the package tracker. When you are in a different section of the app, by clicking on the navigation logo or "Home" it will bring you back to this section. 
+
+![The screenshot of the home section](https://github.com/FeNatalia/yellowboxtracking/blob/main/src/assets/readme-screenshots/home.jpg)
+
+The next is the Track section which consists of the list of parcels. It shows the sender, and the status. The "Track" on the navigation bar links to this section, as well as the "Track now" button on Home section.
+
+![The screenshot of the track section](https://github.com/FeNatalia/yellowboxtracking/blob/main/src/assets/readme-screenshots/track.jpg)
+
+Each parcel is clickable, when you click on one, a popup window will appear with more information about the package, such as sender, estimated time of arrival, status,pickup location and a map of the location. The popup window can be closed by clicking on “X” on the top right corner or by clicking on the "go back" button.
+
+![The screenshot of the parcel popup](https://github.com/FeNatalia/yellowboxtracking/blob/main/src/assets/readme-screenshots/package.jpg)
+
+
+## How to start 
+
+You need to have npm installed on your computer. In the project terminal first run:
+
+### `npm install`
+
+It would compile the project before you would run it. After this go to the next step:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Leaflet Map
 
-### `npm test`
+You need to install leaflet to make the map work, simply run: 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm install react react-dom leaflet`
 
-### `npm run build`
+and 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm install react-leaflet`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Diagram
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The diagram/component tree of the project structure: 
 
-### `npm run eject`
+![a diagram showing the project structure](https://github.com/FeNatalia/yellowboxtracking/blob/main/src/assets/readme-screenshots/component-tree.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+also can be find via: https://whimsical.com/component-tree-natalia-Txwj2UmVDiDJrc57dEtdNM
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Prototype
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The prototype is made in Figma and available through the link: https://www.figma.com/file/8Rudv0uI8lM2FL0Qqjus3V/Package-tracker?node-id=2%3A280
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Organisational documentation
 
-## Learn More
+The documentation of the project is available through the links: 
+https://docs.google.com/document/d/1rZV4AxOZyRDQRJxSC53fvsmAwHA9pn17OAUtOSq0g9g/edit?usp=sharing
+https://docs.google.com/spreadsheets/d/1cbiK84ErYHFoxZp5VoeYdTpgcmARyP5A/edit?usp=sharing&ouid=100998197949313405589&rtpof=true&sd=true
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Link
 
-### Code Splitting
+Portfolio landing page is hosted on: https://yellowboxtracking.web.app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
