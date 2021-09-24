@@ -7,7 +7,7 @@ export default function Home(){
                 <img src={HomePhoto} alt="an illustration of a brown box attached to balloons flying"/>
             </div>
             <h1>Yellowbox tracks your parcel live</h1>
-            <button className="btn-primary">TRACK NOW</button>
+            <a href="#track" className="btn-primary">track now</a>
         </section>
     )
 }

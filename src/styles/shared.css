@@ -38,18 +38,6 @@ p{
     color: var(--color-black);
 }
 
-.btn-primary{
-    margin: var(--space-medium);
-    width: 149px;
-    height: 41px;
-    border-radius: 20px;
-    border: 2px solid #9D331B;
-    background-color: #9D331B;
-    font-size: 16px;
-    font-weight: bolder;
-    color: #FFFF;
-}
-
 /*Desktop queries*/
 @media (min-width: 1040px) {
     h1{
@@ -70,9 +58,4 @@ p{
         font-weight: thin;
     }
 
-    .btn-primary{
-        width: 159px;
-        height: 46px;
-        font-size: 18px;
-    }
 }
