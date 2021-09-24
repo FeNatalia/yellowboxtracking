@@ -1,61 +1,60 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap");
 
-html{
-    display: block;
-    color: text;
+html {
+  display: block;
+  color: text;
 }
 
-body{
-    font-family: "Rubik", sans-serif; 
-    box-sizing: border-box;
-    margin: 0 auto;
-    background-color: var(--color-light-yellow);
-} 
-
-h1{
-    text-transform: uppercase;
-    color: var(--color-red);
-    font-size: 28px;
-    font-weight: 900;
+body {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: var(--color-light-yellow);
 }
 
-h2{
-    font-size: 24px;
-    font-weight: bolder;
-    color: var(--color-red);
+h1 {
+  text-transform: uppercase;
+  color: var(--color-red);
+  font-size: 28px;
+  font-weight: 900;
 }
 
-h3{
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--color-black);
+h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--color-red);
 }
 
-p{
-    font-size: 16px;
-    font-weight: normal;
-    color: var(--color-black);
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+p {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--color-black);
 }
 
 /*Desktop queries*/
 @media (min-width: 1040px) {
-    h1{
-        font-size: 36px;
-    }
-    
-    h2{
-        font-size: 30px;
-    }
-    
-    h3{
-        font-size: 24px;
-        font-weight: bold;
-    }
-    
-    p{
-        font-size: 18px;
-        font-weight: thin;
-    }
+  h1 {
+    font-size: 36px;
+  }
 
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: thin;
+  }
 }
