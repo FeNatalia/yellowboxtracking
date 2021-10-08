@@ -9,19 +9,22 @@ export default function Track({ setModal }) {
   // Local State
   const [status, setStatus] = useState(0);
   const [parcels, setParcels] = useState([]);
+
   // Constants
   const API_URL = "https://my.api.mockaroo.com/insta-orders.json?key=e49e6840";
+
   // List of Package previews
   const PackagesList = parcels.map((item) => (
     <PackageItem key={item.id} item={item} onClick={() => onPackage(item)} />
   ));
-  // Custom hook
+  
   useEffect(() => {
     fetch(API_URL)
       .then((response) => response.json())
       .then(onFetchSuccess)
       .catch(onFetchFail);
   }, [setParcels, setStatus]);
+  
   // Methods
   function onFetchSuccess(json) {
     setParcels(json);
